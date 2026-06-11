@@ -1,6 +1,6 @@
 #include "CustomerRepository.h"
 #include <fstream>
-#include <iostream>
+#include <filesystem>
 
 json CustomerRepository::load()
 {
@@ -18,6 +18,9 @@ json CustomerRepository::load()
 
 void CustomerRepository::save(const json& root)
 {
+    std::filesystem::create_directories("data");
     std::ofstream ofs(FILE_PATH);
+    if (!ofs.is_open())
+        throw std::runtime_error("customers.json 파일을 저장할 수 없습니다.");
     ofs << root.dump(4);
 }
