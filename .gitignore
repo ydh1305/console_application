@@ -1,0 +1,26 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.cachefile
+ipch/
+
+# Build output
+Debug/
+Release/
+x64/
+x86/
+Win32/
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.exe
+
+# Temp / plan docs
+temp_docs/
