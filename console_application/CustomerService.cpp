@@ -1,4 +1,5 @@
 #include "CustomerService.h"
+#include "JsonUtils.h"
 #include <stdexcept>
 
 CustomerService::CustomerService(CustomerRepository& repo) : repo_(repo) {}
@@ -46,7 +47,8 @@ std::vector<Customer> CustomerService::readByKey(const std::string& key, const s
 
     for (const auto& item : root.at("customers"))
     {
-        if (item.contains(key) && item.at(key).get<std::string>() == value)
+        auto flat = json_to_flat_map(item);
+        if (flat.count(key) && flat.at(key) == value)
             result.push_back(from_json(item));
     }
 

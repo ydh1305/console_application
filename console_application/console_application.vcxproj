@@ -136,11 +136,13 @@
     <ClCompile Include="Customer.cpp" />
     <ClCompile Include="CustomerRepository.cpp" />
     <ClCompile Include="CustomerService.cpp" />
+    <ClCompile Include="JsonUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Customer.h" />
     <ClInclude Include="CustomerRepository.h" />
     <ClInclude Include="CustomerService.h" />
+    <ClInclude Include="JsonUtils.h" />
   </ItemGroup>
   <ItemDefinitionGroup>
     <ClCompile>
