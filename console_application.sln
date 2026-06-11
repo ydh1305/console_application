@@ -5,6 +5,13 @@ VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "console_application", "console_application\console_application.vcxproj", "{510B7EAE-D16C-4E9B-AF68-FE9881CB1147}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tmp", "tmp", "{830D8957-DD00-4965-8B25-EB8C6CFB89FB}"
+	ProjectSection(SolutionItems) = preProject
+		tmp\regression_test.cpp = tmp\regression_test.cpp
+		tmp\safety_test.cpp = tmp\safety_test.cpp
+		tmp\run_tests.ps1 = tmp\run_tests.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
