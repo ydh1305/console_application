@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <limits>
+#define NOMINMAX
 #include <Windows.h>
 #include "Customer.h"
 #include "CustomerRepository.h"
