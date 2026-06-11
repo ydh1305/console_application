@@ -24,3 +24,6 @@ Win32/
 
 # Temp / plan docs
 temp_docs/
+
+# MCP 설정 (PAT 포함 — 절대 커밋 금지)
+.mcp.json
