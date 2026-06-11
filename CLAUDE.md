@@ -107,6 +107,7 @@ msbuild console_application.sln /p:Configuration=Release
 ## 관련 문서
 
 - [커밋 컨벤션](docs/commit_convention.md) — Conventional Commits 기반 커밋 메시지 규칙
+- [코드 컨벤션](docs/code_convention.md) — 네이밍, 서식, 오류 처리, JSON 패턴 등 C++ 코딩 규칙
 
 ## 개발 시 주의사항
 
