@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <limits>
+#include <Windows.h>
 #include "Customer.h"
 #include "CustomerRepository.h"
 #include "CustomerService.h"
@@ -149,6 +150,9 @@ static void handleDelete(CustomerService& svc)
 
 int main()
 {
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
+
     CustomerRepository repo;
     CustomerService    svc(repo);
 
